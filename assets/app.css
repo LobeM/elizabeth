@@ -611,11 +611,11 @@ video {
 .h-80 {
   height: 20rem;
 }
-.h-screen {
-  height: 100vh;
-}
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .w-1\/2 {
   width: 50%;
