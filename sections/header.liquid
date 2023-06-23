@@ -111,7 +111,7 @@
         <div class="pt-3">
           <nav class="grid gap-y-7">
             {% for link in main_menu_linklist %}
-              {% assign link_handle = link.handle | replace: '-', '_' %}
+              {% comment %} {% assign link_handle = link.handle | replace: '-', '_' %} {% endcomment %}
               {% if link.links != blank %}
                 <div
                   x-data="{ openSubMenu: false }"

@@ -26,7 +26,7 @@
             {% if section.settings.enable_published_date %}
               <time
                 itemprop="datePublished dateCreated"
-                datetime="{{ article.published_at | date: format: 'on_date'  }}"
+                datetime="{{ article.published_at | date: format: 'on_date' }}"
               >
                 {{- article.published_at | date: format: 'on_date' -}}
               </time>
@@ -181,7 +181,7 @@
     {% endif %}
     {% if article.image %}
       "image": [
-        {{ article | image_url: width: 1920 | prepend: "https:" | json }}
+        {{ article | img_url: width: 1920 | prepend: "https:" | json }}
       ],
     {% endif %}
     "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},

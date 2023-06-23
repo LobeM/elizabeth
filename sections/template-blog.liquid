@@ -22,7 +22,7 @@
               <div class="p-4">
                 <h2 class="text-xl font-medium my-4">{{ article.title }}</h2>
 
-                {% if articel.exerpt.size > 0 %}
+                {% if article.exerpt.size > 0 %}
                   <p>{{ article.excerpt | strip_html | truncatewords: 15, '...' }}</p>
                 {% else %}
                   <p>{{ article.content | strip_html | truncatewords: 15, '...' }}</p>
