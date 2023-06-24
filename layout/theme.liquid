@@ -10,7 +10,7 @@
     {{ content_for_header }}
     <!-- Header hook for plugins -->
     {{ 'app.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'app.js' | asset_url }}"></script>
+    <script src="{{ 'app.js' | asset_url }}" defer></script>
 
     <style>
       [x-cloak] {
